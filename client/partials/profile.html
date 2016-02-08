@@ -1,0 +1,26 @@
+<div ng-controller="EditController">
+	<h3>EDIT</h3>
+	<form>
+		<input type="text" ng-model="message.name">
+		<br>
+		<input type="text" ng-model="message.message">
+		<br>
+		<input type="submit" ng-click="editMessage(message)">
+	</form>
+</div>
+
+
+
+
+
+<!-- THIS FORM IS WRONG!!!!!!!!!!!!!!!!!!!!!!! BUT WHY!?!?!?!?!?!? -->
+<!-- THE MORAL IS DON'T USE VALUES IN ANGULAR. I'M NOT SURE WHY, BUT
+THAT'S THE WAY IT IS. MAYBE IT'S BECAUSE THIS IS A TEMPLATE, WHEREAS 
+PHP GENERATES THE ENTIRE PAGE -->
+<!-- <form>
+	<input type="text" ng-model="editedMessage.name" value="{{message.name}}" placeholder="{{message.name}}">
+	<br>
+	<input type="text" ng-model="editedMessage.message" value="{{message.message}}" placeholder="{{message.message}}">
+	<br>
+	<input type="submit" ng-click="editMessage(editedMessage, message._id)">
+</form> -->
