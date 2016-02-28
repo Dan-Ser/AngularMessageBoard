@@ -9,6 +9,7 @@ var bodyParser = require("body-parser");
 var multer = require("multer");
 var expressSession = require('express-session');
 
+
 app.use(expressSession({ secret: 'mySecretKey', cookie: { maxAge: 60000 }, resave: true, saveUninitialized: true }));
 app.use(cookieParser())
 app.use(passport.initialize());
