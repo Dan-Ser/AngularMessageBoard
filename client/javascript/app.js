@@ -5,6 +5,9 @@ myApp.config(function ($routeProvider) {
         .when('/', {
             templateUrl: 'partials/landing_page.html'
         })
+        .when('/dashboard', {
+            templateUrl: 'partials/dashboard.html',
+        })
         .when('/edit/:id', {
         	templateUrl: 'partials/profile.html'
         })
@@ -12,3 +15,4 @@ myApp.config(function ($routeProvider) {
             redirectTo: '/'
         });
 });
+
