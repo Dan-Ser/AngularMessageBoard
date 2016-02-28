@@ -1,0 +1,66 @@
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+}
+.message{
+    border: 1px solid black;
+    margin: 10px 0px 10px 100px;
+    width: 300px;
+    height: 220px;
+    overflow: auto; 
+}
+
+p{
+    text-align: center;
+}
+
+h5{
+    margin: 10px auto;
+    padding: 3px;
+    background-color: lightgrey;
+    color: white;
+    display: inline-block;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+.comment_form{
+    margin-top: 5px;
+    float: right;       
+}
+
+.edit_link{
+    margin-left: 60%;
+}
+
+#slideshow, #landing_page_bottomm_half{
+    height: 50%;
+}
+
+.absolute{
+    position: absolute;
+}
+
+#slideshow > div {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px;
+}
+
+#login_reg_left{
+    position: absolute;
+    left: 15%;
+}
+
+#login_reg_right{
+    position: absolute;
+    right: 15%;
+}
