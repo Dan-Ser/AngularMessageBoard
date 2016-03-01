@@ -18,7 +18,7 @@ p{
     text-align: center;
 }
 
-h5{
+h4{
     margin: 10px auto;
     padding: 3px;
     background-color: lightgrey;
@@ -43,24 +43,48 @@ h5{
     height: 50%;
 }
 
+#slideshowContent{
+    height: 300px;
+}
+
 .absolute{
     position: absolute;
 }
 
 #slideshow > div {
     position: absolute; 
-    top: 10px; 
+    top: 10%; 
     left: 10px; 
     right: 10px; 
     bottom: 10px;
 }
 
 #login_reg_left{
-    position: absolute;
-    left: 15%;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 #login_reg_right{
-    position: absolute;
-    right: 15%;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+header{
+    width: 100%;
+    height: 5%;
+  
+}
+
+.landing_page_login_link, .landing_page_register_link{
+    font-size: 3em;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 13%;
+    padding: 3%;
+    background-color: #fafafa;
+    color: #e53935 ;
+    border: 1px solid grey;
+    text-align: center;
 }

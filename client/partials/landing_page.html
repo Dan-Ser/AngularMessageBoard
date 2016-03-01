@@ -1,52 +1,82 @@
 <script>
-        $(document).ready(function() {
-            $('#slideshow > div:gt(0)').hide();
+        // $(document).ready(function() {
+        //     $('#slideshow > div:gt(0)').hide();
            
-            setInterval(function() { 
-                $('#slideshow > div:first')
-                    .fadeOut(1000)
-                    .next()
-                    .fadeIn(1000)
-                    .end()
-                    .appendTo('#slideshow');
-                },  6000);
-        });
+        //     setInterval(function() { 
+        //         $('#slideshow > div:first')
+        //             .fadeOut(500)
+        //             .next()
+        //             .fadeIn(500)
+        //             .end()
+        //             .appendTo('#slideshow');
+        //         },  6000);
+        // });
 </script>
-<div class="wrap" ng-controller="LoginRegController">
+<div class="wrap red darken-1" ng-controller="LoginRegController">
 	<div id="slideshow" class="grey lighten-5">
-        <div>
-        	<h1>Welcome to Angular Message Board!</h1>
+        <div id="slideshowContent">
+        	<span class="hide-on-small-only"><h1>Welcome to Angular Message Board!</h1></span>
+        	<span class="hide-on-small-only"><h3>Please sign in or register below</h3></span>
+        	<span class="hide-on-med-and-up"><h3>Angular</h3></span>
+        	<span class="hide-on-med-and-up"><h3>Message</h3></span>
+        	<span class="hide-on-med-and-up"><h3>Board</h3></span>
         </div>
-        <div>
-        	<h1>Here's a second message!</h1>
+       <!--  <div>
+        	<h1>Why use Anuglar Message Board?</h1>
         </div>
-        <div>
-        	<h1>Finally, this is the third message!</h1>
-        </div>
+        <div class="row">
+	        <div class="card small col l3 push-l1">
+	        	<div class="card-content">
+		        	<h4>Welcome to Angular Message Board!</h4>
+	        	</div>
+	        </div>
+	         <div class="card small col l3 push-l1">
+	        	<div class="card-content">
+		        	<h4>Welcome to Angular Message Board!</h4>
+	        	</div>
+	        </div>
+	         <div class="card small col l3 push-l1">
+	        	<div class="card-content">
+		        	<h4>Welcome to Angular Message Board!</h4>
+	        	</div>
+	        </div>
+	    </div> -->
 	</div>
 	<div id="landing_page_bottomm_half" class="red darken-1">
-		<div id="login_reg_left">
-			<h5>Login</h5>
-			<form ng-submit="login(user)">
-				Username:<input type="text" ng-model="user.username">
-				<br>
-				Password:<input type="password" ng-model="user.password">
-				<br>
-				<input type="submit">
-			</form>
-		</div>
-		<div id="login_reg_right">
-			<h5>Register</h5>
-			<form ng-submit="register(newUser)">
-				Username:<input type="text" ng-model="newUser.username">
-				<br>
-				Password:<input type="password" ng-model="newUser.password">
-				<br>
-				Confirm Password:<input type="password" ng-model="newUser.confirmPassword">
-				<br>
-				<input type="submit">
-			</form>
-			<p>{{error}}</p>
+		<div class="row">
+			<div id="login_reg_left" class="col l4 offset-l1 s4 offset-s1 hide-on-small-only">
+				<h5>Login</h5>
+				<form ng-submit="login(user)">
+					Username:<input type="text" ng-model="user.username">
+					<br>
+					Password:<input type="password" ng-model="user.password">
+					<br>
+					<input type="submit">
+				</form>
+			</div>
+			<div id="login_reg_right" class="col l4 offset-l2 s4 offset-s1 hide-on-small-only">
+				<h5>Register</h5>
+				<form ng-submit="register(newUser)">
+					Username:<input type="text" ng-model="newUser.username">
+					<br>
+					Password:<input type="password" ng-model="newUser.password">
+					<br>
+					Confirm Password:<input type="password" ng-model="newUser.confirmPassword">
+					<br>
+					<input type="submit">
+				</form>
+				<p>{{error}}</p>
+			</div>
+			<div class="hide-on-med-and-up">
+				<button class="landing_page_login_link">Login</button>
+			</div>
+			<div class="hide-on-med-and-up">
+				<button class="landing_page_register_link">Register</button>
+			</div>
 		</div>
 	</div>
 </div>
+
+
+
+
