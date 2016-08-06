@@ -1,4 +1,7 @@
 {
+  "name": "angular-message-board",
+  "version": "0.0.1",
+  "description": "Message commenting with Angular",
   "dependencies": {
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.12.4",
